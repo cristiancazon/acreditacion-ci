@@ -15,8 +15,7 @@ Se utilizó para acreditar a más de 250 Directivos en 15 minutos usando como se
 Este AMB está desarrollado en PHP y la base de datos es MySQL.
 No permite cambios sobre la base de datos por el momento, la primer idea era que funcione para poder acreditar a los Directivos
 con una base de datos ya establecida y agregar a los que no se encuentren en la misma.
-Compartimos el código bajo Licencia GPLv3 y esperamos poder mejorarlo para que lo puedan implementar o en todo caso usarlo como
-ejemplo o base de sistemas muchos más desarrollados.
+Compartimos el código bajo Licencia GPLv3 y esperamos poder mejorarlo para que lo puedan implementar o en todo caso usarlo como ejemplo o base de sistemas muchos más desarrollados.
 
 Vamos a administrar el repositorio de github para actualizarlo, mejorarlo y sobre todo compartirlo, vamos a aprender juntos y
 desarrollar nuevas herramientas y soluciones.
