@@ -1,0 +1,20 @@
+<!--      //     Conectar Igualdad Jujuy - 2015                            CCCCC  IIIII    JJJJJ -->
+<!--      l->                                                              C        I        J   -->
+<!--      ll     Autores:                                                  C        I        J   -->
+<!--  {   ll            * Roxana Emilce Paco: emilcepaco@gmail.com         C        I        J   -->
+<!--  llllll            * Cristian Damián Cazón: cristiancazon@gmail.com   C        I    J   J   -->
+<!--  ||  ||     Licencia GPLv3                                            C        I    J   J   -->
+<!--  ''  ''                                                               CCCCC  IIIII  JJJJJ   -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Inicio</title>
+</head>
+<body background="img/logoH.png">
+<center>
+  <img src="img/logoPNIDE.jpg" alt="Logo PNIDE" height="80">
+</center>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html> 
+<head>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<META HTTP-EQUIV="REFRESH" CONTENT="2;URL=acreditar.php"> 
+</head>
+<body class="subtitulo">
+<?php 
+$v2 = $_POST['estado4'];
+$v3 = $_POST['nuevo_estado4'];
+require_once ('includemysql.php');
+$sql = "SELECT * FROM persona WHERE id = $v3"; 
+$result = mysql_query($sql);
+$sql = "UPDATE persona SET est4='$v2' WHERE id=$v3";
+$result = mysql_query($sql); 
+?>
+<p>Datos Modificados.</p>
+<p>Volver&aacute; autom&aacute;ticamente a la P&aacute;gina Principal en 2 segundos.</p>
+</body>
+</html>

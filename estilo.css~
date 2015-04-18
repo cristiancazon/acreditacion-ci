@@ -1,0 +1,65 @@
+/**      //     Conectar Igualdad Jujuy - 2015                           CCCCC  IIIII    JJJJJ 
+*       l->                                                              C        I        J   
+*       ll     Autores:                                                  C        I        J  
+*   {   ll            * Roxana Emilce Paco: emilcepaco@gmail.com         C        I        J  
+*   llllll            * Cristian Damián Cazón: cristiancazon@gmail.com   C        I    J   J  
+*   ||  ||     Licencia GPLv3                                            C        I    J   J  
+*   ''  ''                                                               CCCCC  IIIII  JJJJJ  
+*/
+
+.fondo {
+    background-image: url("img/logoH.png");
+}
+
+.menu {
+	background-color:#79bbff;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:12px 30px;
+	text-align: center;
+	text-decoration:none;
+	width:50px;
+}
+.menu:hover {
+	background-color:#378de5;
+}
+.menu:active {
+	position:relative;
+	top:1px;
+}
+
+.boton {
+	background-color:#79bbff;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:12px 30px;
+	text-align: center;
+	text-decoration:none;
+}
+.boton:hover {
+	background-color:#378de5;
+}
+.boton:active {
+	position:relative;
+	top:1px;
+}
+
+.subtitulo {
+	font-family:arial;
+}
