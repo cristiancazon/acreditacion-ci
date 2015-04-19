@@ -13,10 +13,13 @@
 <body class="subtitulo"> 
 <h3>Nueva Persona</h3>
 <form method="POST" action="agregar.php" target="central" name="agregar"> 
-   <strong>DNI:</strong> <input type="text" name="dni"><br/>
+   <strong>DNI:</strong> <input type="text" name="dni"
+                                pattern="[0-9]{8}" title="Ingresar DNI 8 d&iacute;gitos num&eacute;ricos."><br/>
    <strong>Apellido y Nombre:</strong> <input type="text" name="ayn"><br/>
-   <strong>Tel&eacute;fono:</strong> <input type="text" name="tel"><br/>
-   <strong>E-mail:</strong> <input type="text" name="mail"><br/>
+   <strong>Tel&eacute;fono:</strong> <input type="text" name="tel"
+                                            pattern="[0-9]{6,9}" title="Tel&eacute;fono (Entre 6 y 9 d&iacute;s."><br/>
+   <strong>E-mail:</strong> <input type="text" name="mail"
+                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Solo direcciones de correo electr&o&oacute;."><br/>
    <strong>Localidad:</strong>
 <select name="localidad" id="localidad" onchange=""> 
 <?php 
@@ -34,4 +37,4 @@ while ( $loc = mysql_fetch_object( $result ) )
    <input type="submit" value="Agregar" name="btn_agregar" class="boton"> 
 </form> 
 </body> 
-</html> 
+</html>

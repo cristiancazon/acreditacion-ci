@@ -12,7 +12,9 @@
 </head>
 <body OnLoad="document.formulario.dni.focus();">
 <form method="POST" action="buscador.php" target="central" name="formulario"> 
-<strong class="subtitulo">Ingresar DNI:</strong> <input type="text" name="dni" size="18" pattern="[0-9]{8}" title="DNI 8 d&iacute;gitos num&eacute;ricos."><br><br> 
+<strong class="subtitulo">Ingresar DNI:</strong> <input type="text" name="dni"
+size="18" pattern="[0-9]{8}" title="Ingresar DNI 8 d&iacute;gitos num&eacute;ricos.">
+<br><br> 
 <input type="submit" value="Buscar" name="buscar" class="boton"> 
 </form> 
 </body>
