@@ -1,4 +1,0 @@
-<?php
-$conn = mysql_pconnect ('127.0.0.1', 'conectar', 'igualdad') or die ('Error en la conexion.');
-$conndb = mysql_select_db ('conectar', $conn) or die('Error en la Base de Datos.')
-?>
