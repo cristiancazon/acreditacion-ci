@@ -20,6 +20,83 @@ Compartimos el código bajo Licencia GPLv3 y esperamos poder mejorarlo para que 
 Vamos a administrar el repositorio de github para actualizarlo, mejorarlo y sobre todo compartirlo, vamos a aprender juntos y
 desarrollar nuevas herramientas y soluciones.
 
+Los datos de instalación de mysql, usuario, contraseña y estructura de las tablas las vamos a colocar
+al final de este archivo.
+
 Porgramar juntos se puede y esta es la prueba.
 
 Cualquier consulta no duden en contactarse con nosotros.
+
+Requerimientos:
+*) apache (Servidor Web)
+Comando de instalación: apt-get install apache2
+
+Servidor: 127.0.0.1
+
+*) mysql (Servidor para la Base de Datos)
+Comando de instalación: sudo apt-get install mysql-server mysql-client
+
+Recuerden colocar una contraseña root para mysql
+
+*) php (Soporte PHP para el servidor Web)
+Comando de instalación: sudo apt-get install php5-mysql
+
+*) phpmyadmin (Paquete para administrar mysql desde web)
+Comando de instalación: sudo apt-get install phpmyadmin
+
+Dirección: 127.0.0.1/phpmyadmin
+
+También pueden instalar todo desde el menú en su Huayra:
+Sistema -> Administración -> Centro de Software
+Buscar los paquetes e instalarlos.
+
+Base de Datos
+
+Nombre de la Base de datos: conectar
+Usuario de la Base de datos: conectar
+Contraseña de la Base de datos: igualdad
+
+Estructura de la Base de datos:
+
+Tablas:
+  -> establecimiento
+        cue: int(11) - Llave Primaria
+        nom_establecimiento: varchar(40)
+        id_region: int(11)
+        id_tipo: int(11)
+        id_localidad: int(11)
+        tel: int(11)
+
+  -> localidad
+        id_localidad: int(11)
+        nom_localidad: varchar(30)
+        cp: int(11)
+
+  -> persona
+        id: int(11)
+        nombre: varchar(40)
+        telefono: int(11)
+        mail: varchar(40)
+        id_localidad: int(11)
+        cue: int(11)
+        estado: varchar(12)
+        est2: varchar(12)
+        est3: varchar(12)
+        est4: varchar(12)
+
+  -> region
+        id_region: int(11)
+        nom_region: varchar(5)
+
+  -> tipo
+        id_tipo: int(11)
+        nom_tipo: varchar(12)
+
+Dirección de ABM Acreditación Conectar Igualdad
+
+127.0.0.1/acreditacion-ci
+
+Para poder acceder desde otro Huayra en la red debe modificar la dirección
+a la IP de la netbook Huayra que está siendo utilizada como servidor.
+Forma: IP/acreditacion-ci
+Ejemplo: 192.168.5.1/acreditacion-ci
