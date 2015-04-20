@@ -62,36 +62,59 @@ Estructura de la Base de datos:
 
 Tablas:
   -> establecimiento
+  
         cue: int(11) - Llave Primaria
+        
         nom_establecimiento: varchar(40)
+        
         id_region: int(11)
+        
         id_tipo: int(11)
+        
         id_localidad: int(11)
+        
         tel: int(11)
 
   -> localidad
+  
         id_localidad: int(11)
+        
         nom_localidad: varchar(30)
+        
         cp: int(11)
 
   -> persona
+  
         id: int(11)
+        
         nombre: varchar(40)
+        
         telefono: int(11)
+        
         mail: varchar(40)
+        
         id_localidad: int(11)
+        
         cue: int(11)
+        
         estado: varchar(12)
+        
         est2: varchar(12)
+        
         est3: varchar(12)
+        
         est4: varchar(12)
 
   -> region
+  
         id_region: int(11)
+        
         nom_region: varchar(5)
 
   -> tipo
+  
         id_tipo: int(11)
+        
         nom_tipo: varchar(12)
 
 Dirección de ABM Acreditación Conectar Igualdad
