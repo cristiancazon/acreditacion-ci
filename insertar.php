@@ -33,7 +33,8 @@ while ( $loc = mysql_fetch_object( $result ) )
 } 
 ?> 
 </select><br/>
-   <strong>CUE:</strong> <input type="text" name="cue"><br/>
+   <strong>CUE:</strong> <input type="text" name="cue"
+                                pattern="[0-9]{1,7}" title="Ingrese el CUE, solo n&uacute;meros."><br/>
    <input type="submit" value="Agregar" name="btn_agregar" class="boton"> 
 </form> 
 </body> 

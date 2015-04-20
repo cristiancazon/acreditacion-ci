@@ -23,6 +23,8 @@ desarrollar nuevas herramientas y soluciones.
 Los datos de instalación de mysql, usuario, contraseña y estructura de las tablas las vamos a colocar
 al final de este archivo.
 
+Las propuestas y actualizaciones aprobadas van en el archivo "Actualizaciones"
+
 Porgramar juntos se puede y esta es la prueba.
 
 Cualquier consulta no duden en contactarse con nosotros.
