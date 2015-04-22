@@ -34,6 +34,7 @@ Requerimientos:
 Comando de instalación: apt-get install apache2
 
 Servidor: 127.0.0.1
+Dirección de web: /var/www/
 
 *) mysql (Servidor para la Base de Datos)
 Comando de instalación: sudo apt-get install mysql-server mysql-client
@@ -47,6 +48,8 @@ Comando de instalación: sudo apt-get install php5-mysql
 Comando de instalación: sudo apt-get install phpmyadmin
 
 Dirección: 127.0.0.1/phpmyadmin
+
+Son los mismos comandos que utilizamos para instalar en nuestro Huayra
 
 También pueden instalar todo desde el menú en su Huayra:
 Sistema -> Administración -> Centro de Software
@@ -125,3 +128,5 @@ Para poder acceder desde otro Huayra en la red debe modificar la dirección
 a la IP de la netbook Huayra que está siendo utilizada como servidor.
 Forma: IP/acreditacion-ci
 Ejemplo: 192.168.5.1/acreditacion-ci
+
+Voy a definir las ramas del Git y se las paso por aquí.
