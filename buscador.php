@@ -9,7 +9,7 @@
 <?php
 require_once ('includemysql.php');
 $v1 = $_POST['dni'];
- $result = mysql_query("SELECT * FROM persona p join establecimiento e, region r, tipo t WHERE id = '$v1' and p.cue=e.cue and e.id_region=r.id_region and e.id_tipo=t.id_tipo");  
+ $result = mysql_query("SELECT * FROM persona p join establecimiento e, region r, tipo t, cargo c WHERE p.id = '$v1' and p.cue=e.cue and e.id_region=r.id_region and e.id_tipo=t.id_tipo and p.cargo=c.id_cargo");
 if ($row = mysql_fetch_array($result)){ 
       do { 
             $var1 = $row["id"];
@@ -20,6 +20,7 @@ if ($row = mysql_fetch_array($result)){
             $var6 = $row["nom_establecimiento"]; 
             $var7 = $row["nom_region"]; 
             $var8 = $row["nom_tipo"]; 
+            $var9 = $row["nombre_cargo"];
             $var_est = $row["estado"];
             $var_est2 = $row["est2"];
             $var_est3 = $row["est3"];
@@ -41,6 +42,7 @@ echo "No se ha encontrado ninguna persona con el DNI $v1";
    <strong>Establecimiento:</strong> <label><?php echo $var6 ?></label><br/>
    <strong>Regi&oacute;n:</strong> <label><?php echo $var7 ?> | </label>
    <strong>Tipo:</strong> <label><?php echo $var8 ?></label><br/>
+   <strong>Cargo:</strong> <label><?php echo $var9 ?></label><br/>
 <form method="POST" action="estado.php"> 
    <strong>1er D&iacute;a/Ma&ntilde;ana:</strong> <label><?php echo $var_est ?></label>
    <strong> | </strong>

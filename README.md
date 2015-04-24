@@ -99,6 +99,8 @@ Tablas:
         id_localidad: int(11)
         
         cue: int(11)
+
+        cargo: int(2)
         
         estado: varchar(12)
         
@@ -119,6 +121,12 @@ Tablas:
         id_tipo: int(11)
         
         nom_tipo: varchar(12)
+
+  -> cargo
+
+        id_cargo: int(2)
+
+        nombre_cargo: varchar(20)
 
 Dirección de ABM Acreditación Conectar Igualdad
 
