@@ -9,7 +9,7 @@ $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, false, 'UTF-8'
 $pdf->SetCreator(PDF_CREATOR);
 $pdf->SetAuthor('http://www.xerex.com.ar');
 $pdf->SetTitle('Certificado');
-$pdf->SetSubject('Tutirial de reportes en PDF con PHP y MySQL');
+$pdf->SetSubject('');
 $pdf->SetKeywords('Reporte, usuario, php, mysql');
 
 $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
@@ -45,24 +45,35 @@ $pdf->setPrintFooter(false); // imprime el pie ni la linea
 
 //Crear html
 
-
+    $fecha = "Lunes 3 de enero de 2015";
+    $lugar = "San Salvador de Jujuy";
+    $firma = "Cristian";
     $result=mysql_query("SELECT * FROM persona p join establecimiento e WHERE estado='presente' and est2='presente' and p.cue=e.cue");
     while ($row = mysql_fetch_assoc($result)){ 
         //usar una tabla para ordenar
     $html='';
-    $html=$html.'
-    <div align="center"><img src="../img/logoPNIDE.jpg">
-    <br/><br/><br/>CONSTANCIA DE ASISTENCIA AL EVENTO<br/><br/><br/>
-    Por medio de la presente CERTIFICO que ';
-	$html = $html. $row["nombre"];
-	$html = $html.' DNI ';
-	$html = $html. $row["id"];
-	$html = $html.'<br/>';
-	$html = $html. $row["nom_establecimiento"];
-	$html = $html.'<br/><br/>';
-	$html = $html.' participo del evento PNIDE en San Salvador de Jujuy.</p>';
-        $html = $html.'</div><p align="right">Martes 28 de Abril de 2015, San Salvador de Jujuy</p>
-        ';
+        $html=$html.'<table border="0" align="center"><tr><th><img src="../img/logoPNIDE.jpg"></th></tr>'
+                .'<tr><td></td></tr>'
+                .'<tr><td></td></tr>'
+                .'<tr><td><h2>CONSTANCIA DE ASISTENCIA AL EVENTO</h2></td></tr>'
+                .'<tr><td></td></tr>'
+                .'<tr><td></td></tr>'
+                .'<tr><td width="150"></td><td style="text-align:justify;">Por medio de la presente CERTIFICO que '.$row["nombre"].', DNI '.$row["id"].',</td></tr>'
+                .'<tr><td width="150"></td><td style="text-align:justify;">participo del evento PNIDE en San Salvador de Jujuy.</td></tr>'
+                .'<tr><td></td></tr>'
+                .'<tr><td></td></tr>'
+                .'<tr><td></td></tr>'
+                .'<tr><td width="800" align="right">'.$fecha.' ,'.$lugar.'</td></tr>'
+                .'<tr><td></td></tr>'
+                .'<tr><td></td></tr>'
+                .'<tr><td></td></tr>'
+                .'<tr><td></td></tr>'
+                .'<tr><td></td></tr>'
+                .'<tr><td></td></tr>'
+                .'<tr><td width="670" align="right"><i>'.$firma.'</i></td></tr>'
+                .'<tr><td></td></tr>'
+                .'<tr><td></td></tr>'
+                . '</table>';
         $pdf->AddPage('L','A4');
         $pdf->writeHTML($html, true, false, true, false, '');
     };
