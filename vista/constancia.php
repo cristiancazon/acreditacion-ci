@@ -45,10 +45,11 @@ $pdf->setPrintFooter(false); // imprime el pie ni la linea
 
 //Crear html
 
-    $fecha = "Lunes 3 de enero de 2015";
-    $lugar = "San Salvador de Jujuy";
-    $firma = "Cristian";
-    $result=mysql_query("SELECT * FROM persona p join establecimiento e WHERE estado='presente' and est2='presente' and p.cue=e.cue");
+    $fecha=$_POST['fecha'];
+    $lugar=$_POST['lugar'];
+    $firma=$_POST['firma'];
+    $cargo=$_POST['cargo'];
+    $result=mysql_query("SELECT * FROM persona p join establecimiento e WHERE estado='presente' and est2='presente' and p.cue=e.cue ORDER BY nombre");
     while ($row = mysql_fetch_assoc($result)){ 
         //usar una tabla para ordenar
     $html='';
@@ -63,7 +64,7 @@ $pdf->setPrintFooter(false); // imprime el pie ni la linea
                 .'<tr><td></td></tr>'
                 .'<tr><td></td></tr>'
                 .'<tr><td></td></tr>'
-                .'<tr><td width="800" align="right">'.$fecha.' ,'.$lugar.'</td></tr>'
+                .'<tr><td width="800" align="right">'.$fecha.', '.$lugar.'</td></tr>'
                 .'<tr><td></td></tr>'
                 .'<tr><td></td></tr>'
                 .'<tr><td></td></tr>'
@@ -71,6 +72,7 @@ $pdf->setPrintFooter(false); // imprime el pie ni la linea
                 .'<tr><td></td></tr>'
                 .'<tr><td></td></tr>'
                 .'<tr><td width="670" align="right"><i>'.$firma.'</i></td></tr>'
+                .'<tr><td width="670" align="right"><i>'.$cargo.'</i></td></tr>'
                 .'<tr><td></td></tr>'
                 .'<tr><td></td></tr>'
                 . '</table>';

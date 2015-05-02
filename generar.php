@@ -10,14 +10,19 @@
 <head>
 <link href="estilo.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-<div>
-<a href="acreditar.php" target="central" class="menu">Acreditar</a><br/>
-<a href="insertar.php" target="central" class="menu">Agregar</a><br/>
-<a href="presentes.php" target="central" class="menu">Presentes</a><br/>
-<a href="ausentes.php" target="central" class="menu">Ausentes</a><br/>
-<a href="todos.php" target="central" class="menu">Todos</a><br/>
-<a href="generar.php" target=central class="menu">Constancias</a><br/>
-</div>
+<body OnLoad="document.formulario.dni.focus();">
+<form method="POST" action="vista/constancia.php" target=blank name="generar"> 
+<strong class="subtitulo">Fecha:</strong> <input type="text" name="fecha" size="50">
+<br><br> 
+<strong class="subtitulo">Lugar:</strong> <input type="text" name="lugar" size="50">
+<br><br> 
+<strong class="subtitulo">Firma:</strong> <input type="text" name="firma" size="50">
+<br><br> 
+<strong class="subtitulo">Cargo:</strong> <input type="text" name="cargo" size="50">
+<br><br> 
+<input type="submit" value="Imprimir" name="generar" class="boton"> 
+</form> 
+    <br><br><hr>
+    <a href="certificado.php" target="central" class="menu">Exportar a Planilla de C&aacute;lculo</a><br/>
 </body>
 </html>

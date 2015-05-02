@@ -10,14 +10,12 @@
 <head>
 <link href="estilo.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-<div>
-<a href="acreditar.php" target="central" class="menu">Acreditar</a><br/>
-<a href="insertar.php" target="central" class="menu">Agregar</a><br/>
-<a href="presentes.php" target="central" class="menu">Presentes</a><br/>
-<a href="ausentes.php" target="central" class="menu">Ausentes</a><br/>
-<a href="todos.php" target="central" class="menu">Todos</a><br/>
-<a href="generar.php" target=central class="menu">Constancias</a><br/>
-</div>
+<body OnLoad="document.formulario.dni.focus();">
+<form method="POST" action="buscador.php" target="central" name="formulario"> 
+<strong class="subtitulo">Ingresar DNI:</strong> <input type="text" name="dni"
+size="18" pattern="[0-9]{7,8}" title="Ingresar DNI 7 u 8 d&iacute;gitos num&eacute;ricos.">
+<br><br> 
+<input type="submit" value="Buscar" name="buscar" class="boton"> 
+</form> 
 </body>
 </html>
