@@ -20,6 +20,8 @@
 <br><br> 
 <strong class="subtitulo">Cargo:</strong> <input type="text" name="cargo" size="50">
 <br><br> 
+<strong class="subtitulo">Programa:</strong> <input type="text" name="programa" size="50">
+<br><br> 
 <input type="submit" value="Imprimir" name="generar" class="boton"> 
 </form> 
     <br><br><hr>
