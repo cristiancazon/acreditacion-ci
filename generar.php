@@ -12,7 +12,7 @@
 </head>
 <body OnLoad="document.formulario.dni.focus();">
 <form method="POST" action="vista/constancia.php" target=blank name="generar"> 
-<strong class="subtitulo">Fecha:</strong> <input type="text" name="fecha" size="50">
+    <strong class="subtitulo">Fecha:</strong> <input type="text" name="fecha" size="50">
 <br><br> 
 <strong class="subtitulo">Lugar:</strong> <input type="text" name="lugar" size="50">
 <br><br> 
@@ -25,6 +25,6 @@
 <input type="submit" value="Imprimir" name="generar" class="boton"> 
 </form> 
     <br><br><hr>
-    <a href="certificado.php" target="central" class="menu">Exportar a Planilla de C&aacute;lculo</a><br/>
+    <a href="exportar.php" target="central" class="menu">Exportar a Planilla de C&aacute;lculo</a><br/>
 </body>
 </html>

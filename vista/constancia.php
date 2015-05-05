@@ -57,7 +57,7 @@ $pdf->setPrintFooter(false); // imprime el pie ni la linea
         $html=$html.'<table border="0" align="center"><tr><th><img src="../img/pdf-arriba.jpg" border="0"></th></tr>'
                 .'<tr><td></td></tr><h2>'
                 .'<tr><td align="center">Se hace constar que '.$row["nombre"].', DNI '.$row["id"].',</td></tr>'
-                .'<tr><td align="center">Particip&oacute; del 1er Encuentro de N&uacute;cleo de Jornada Completa.</td></tr>'
+                .'<tr><td align="center">particip&oacute; del 1er Encuentro de N&uacute;cleo de Jornada Completa.</td></tr>'
                 .'<tr><td align="center">El mismo corresponde a la 1er instancia presencial del ciclo</td></tr>'
                 .'<tr><td align="center">de formaci&oacute;n del Plan Nacional de Inclusi&oacute;n Digital Educativa.</td></tr>'
                 .'<tr><td></td></tr></h2>'
